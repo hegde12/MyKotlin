@@ -1,0 +1,58 @@
+package com.example.kotlinclass
+
+import java.lang.Exception
+import java.lang.NumberFormatException
+
+fun main()
+{
+    toCheckIfElse()
+}
+
+fun toCheckIfElse()
+{
+    var range=1..100
+    var age:Int=range.random()
+    while(age>18) {
+        if (age > 18) {
+            println("Hi im  " + age)
+        } else {
+            println("Hi im  " + age)
+        }
+        age=range.random()
+    }
+    for (i in 6 downTo 0 step 2)
+    {
+        println(i)
+
+    }
+    do{
+        if (age > 18) {
+            println("Hi im  " + age)
+        } else {
+            println("Hi im  " + age)
+        }
+        age=range.random()
+    }while(age>18)
+    when(age)
+    {
+        in 1..18-> println("Hi my age is $age")
+        else->println("Hi my age is $age")
+    }
+    try {
+        val b:Int=0
+        div(age,b)
+    }
+    catch (e :Exception)
+    {
+        println(e)
+    }
+
+}
+    fun div(s:Int,b:Int)
+    {
+        if(b==0)
+        throw NumberFormatException("divided by zero exception")
+       else
+            s/b
+       // throw NumberFormatException("divided by zero exception")
+    }
