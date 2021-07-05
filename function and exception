@@ -56,3 +56,4 @@ fun toCheckIfElse()
             s/b
        // throw NumberFormatException("divided by zero exception")
     }
+    
